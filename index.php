@@ -20,7 +20,7 @@
         <a href="" class="password_old">Olvide mi contraseña</a>
     </form>
     <footer>
-        Todos los derechos reservados
+        Todos feos
     </footer>
 </body>
 </html>
