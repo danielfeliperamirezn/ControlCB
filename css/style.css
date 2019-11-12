@@ -1,0 +1,144 @@
+* {
+  transition: .5s all; }
+
+img {
+  width: 100%;
+  max-width: 100%; }
+
+/*  mixin */
+.margin_body {
+  margin-left: 17%; }
+
+body {
+  background-color: #f1f1f1; }
+
+/* header */
+.container_header {
+  background-color: black;
+  position: fixed;
+  left: 1%;
+  top: 1%;
+  width: 15%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 30px; }
+  .container_header .logo {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    .container_header .logo img {
+      width: 30%;
+      padding: 1em; }
+  .container_header .containerNav {
+    background-color: black;
+    border-radius: 15px;
+    color: white; }
+    .container_header .containerNav ul li {
+      list-style: none;
+      margin: 2em 0;
+      padding: .5em 1em;
+      border-radius: 15px 0 0 15px;
+      border: 1px solid black; }
+      .container_header .containerNav ul li:hover {
+        background-color: #f1f1f1;
+        color: black;
+        border-radius: 15px 0 0 15px;
+        transition: .5s all; }
+      .container_header .containerNav ul li a {
+        color: #f1f1f1;
+        text-decoration: none;
+        text-transform: uppercase; }
+        .container_header .containerNav ul li a:hover {
+          color: black;
+          transition: .5s all; }
+
+/* TOP */
+.container_top {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px; }
+  .container_top input {
+    width: 70%;
+    padding: .8em;
+    border: none; }
+  .container_top .label_name_model {
+    margin-top: 15px; }
+  .container_top .container_notification {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 1%; }
+    .container_top .container_notification .imageNotify {
+      background-color: #201f1f;
+      color: white;
+      width: 34px;
+      height: 34px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 .5em; }
+    .container_top .container_notification .imageMessage {
+      background-color: #201f1f;
+      color: white;
+      width: 34px;
+      height: 34px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 .5em 0 0; }
+    .container_top .container_notification .container_name {
+      background-color: white;
+      padding: .5em;
+      border-radius: 15px;
+      position: relative; }
+      .container_top .container_notification .container_name .image_person {
+        background-color: #201f1f;
+        color: white;
+        width: 34px;
+        height: 34px;
+        border-radius: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 0; }
+      .container_top .container_notification .container_name p {
+        margin: 0;
+        padding-left: 2em; }
+
+/* inicio */
+.container_section_index .container_section {
+  display: inline-block;
+  background-color: white;
+  color: black;
+  padding: 2em;
+  box-sizing: content-box;
+  margin: 0 1em 2em;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px gainsboro; }
+  .container_section_index .container_section p {
+    text-transform: uppercase; }
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  position: fixed;
+  height: 100%;
+  width: 82%;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
