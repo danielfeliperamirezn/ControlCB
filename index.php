@@ -1,26 +1,35 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/styleIndex.css">
-    <title>Document</title>
-</head>
-<body>
-    <div class="container_logo">
-        <figure class="">
-            <img src="media/img/Logo-transparente.png" alt="">
-        </figure>
-    </div>
-    <form action="index.php" class="form_login">
-        <input type="text" placeholder="Usuario">
-        <input type="text" placeholder="Password">
-        <button type="submit">ingresar</button>
-        <a href="" class="password_old">Olvide mi contraseña</a>
-    </form>
-    <footer>
-        Todos feos
-    </footer>
-</body>
-</html>
+<?php 
+    include("./permanentes/header.php");
+?>
+
+<?php
+    include("./permanentes/top.php");
+?>
+
+    <h1 class="margin_body">INICIO</h1>
+    <section class="margin_body container_section_index">
+        <div class="container_section">
+            <p>Studios Casa Blanca</p>
+        </div>
+        <div class="container_section">
+            <p>Ventas</p>
+        </div>
+        <div class="container_section">
+            <p>porcentaje de modelos</p>
+        </div>
+        <div class="container_section">
+            <p>Ventas</p>
+        </div>
+        <div class="container_section">
+            <p>facturación total de todos</p>
+        </div>
+        <div class="container_section">
+            <p>Metas de estudio</p>
+        </div>
+    </section>
+
+
+
+<?php 
+    include("./permanentes/footer.php");
+?>
