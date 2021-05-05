@@ -1,4 +1,3 @@
-
 let global = {
 
     start: () => {
@@ -7,19 +6,19 @@ let global = {
         })
     },
 
-    register: (formRegister) => {
-
-        const formdata = new FormData(formRegister);
-        alert(formdata);
-
+    eventSend: (formRegister) => {
+        const formData = new FormData(formRegister);
+        fetch('../flotantes/validarRegistro.php', {
+            method: 'POST',
+            body: formData
+        })
     },
 
-
     dataValidation: () => {
-        let formRegister = document.formRegister;
-        formRegister.addEventListener('submit', (event) => {
-            global.register(formRegister);
-        });
+        let formElement = document.formRegister;
+        formElement.addEventListener('submit', (event) => {
+            global.eventSend(formElement);
+        }); 
     }
 
 }

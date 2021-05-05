@@ -11,14 +11,14 @@
         <h2 class="Title">Registro Modelos</h2>
     </div>
     <div class="containerDIVs">
-        <form id="formRegister" class="bgBurbble">
+        <form id="formRegister" class="bgBurbble" name="formRegister">
             <div class="containerInputs">
                 <label for="nombre">Nombre del modelo:</label>
                 <input name="nombre" type="text">
             </div>
             <div class="containerInputs">
-                <label for="dolar">Cédula:</label>
-                <input name="dolar" type="number">
+                <label for="celular">Cédula:</label>
+                <input name="celular" type="number">
             </div>
             <div class="containerInputs">
                 <label for="celular">Celular:</label>
@@ -52,6 +52,8 @@
         </div>
     </div>
 </section>
+
+<script src="../js/registro.js"></script>
 
 <?php
     include("../permanentes/footer.php")
