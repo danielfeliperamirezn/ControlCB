@@ -15,42 +15,42 @@
             <h2 class="">Forumalio de Liquidación</h2>
             <div class="containerInputs">
                 <label for="nombre">Nombre del modelo:</label>
-                <input name="nombre" type="text" id="nameModel">
+                <input type="text" name="nombre" id="nameModel">
             </div>
             <div class="containerInputs">
                 <label for="dolar">Valor del dólar:</label>
-                <input name="dolar" type="number" id="dolar">
+                <input type="number" name="dolar" id="dolar">
             </div>
             <div class="containerInputs labelPage">
                 <label for="">Páginas que trabaja: </label>
                 <div class="containerInputs">
                     <div class="containerCB contentPag">
                         <div class="contentDatos">
-                            <input name="Chaturbate" type="checkbox" id="chaturbate">
+                            <input type="checkbox" id="chaturbate">
                             <label for="Chaturbate" class="chaturbate"> Chaturbate </label>
                         </div>
                     </div>
                     <div class="containerBon contentPag">
                         <div class="contentDatos">
-                            <input name="bonga" type="checkbox" id="bonga">
+                            <input type="checkbox" id="bonga">
                             <label for="bonga" class="bonga"> bonga </label>
                         </div>
                     </div>
                     <div class="containerStrip contentPag">
                         <div class="contentDatos">
-                            <input name="Stripchat" type="checkbox" id="stripchat"> 
+                            <input type="checkbox" id="stripchat"> 
                             <label for="Stripchat" class="stripchat"> Stripchat </label>
                         </div>
                     </div>
                     <div class="containerAmateur contentPag">
                         <div class="contentDatos">
-                            <input name="Amateur" type="checkbox" id="amateur">
+                            <input type="checkbox" id="amateur">
                             <label for="Amateur" class="amateur">  Amateur </label>
                         </div>
                     </div>
                     <div class="containerStream contentPag">
                         <div class="contentDatos">
-                            <input name="streamate" type="checkbox" id="streamate">
+                            <input type="checkbox" id="streamate">
                             <label for="streamate" class="streamate">  streamate </label>
                         </div>
                     </div>

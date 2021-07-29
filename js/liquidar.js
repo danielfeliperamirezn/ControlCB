@@ -150,19 +150,16 @@ let liquidar = {
         })
     },
 
-
-
-
-
-    processData : (datos) => {
-        const formData = new FormData(datos);
-        console.log(formData);
-    },
-
     captureData : () => {
+        const urlDatos = "../model/datosLiquidacion.php";
         let datos = document.dataLiquidacion;
         datos.addEventListener("submit", (event) => {
-            liquidar.processData(datos);
+            const formData = new FormData(datos);
+            fetch(urlDatos, {
+                method : 'POST',
+                body : formData
+            });
+            window.location.href = urlDatos;
         })
     },
 
