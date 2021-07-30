@@ -1,8 +1,19 @@
 <?php 
+
+    require "../model/db.php";
+
     include("../permanentes/top.php");
     include("../permanentes/header.php");
 
     $fecha = date("F j, Y");
+
+    $dataSelect = [];
+
+    $sql = "SELECT nombre from modelos2";
+    $query = mysqli_query($conn, $sql);
+    while( $dataQuery = mysqli_fetch_row($query)){
+        array_push($dataSelect,  $dataQuery);
+    };
 
 ?>
 <section class="margin_body container_section_index"> 
@@ -12,10 +23,18 @@
     </div>
     <div class="containerDIVs">
         <form class="bgBurbble" id="dataLiquidacion" name="dataLiquidacion">
-            <h2 class="">Forumalio de Liquidación</h2>
-            <div class="containerInputs">
+            <h2 class="">Formulario de Liquidación</h2>
+            <div class="containerInputs selectPag" >
                 <label for="nombre">Nombre del modelo:</label>
-                <input type="text" name="nombre" id="nameModel">
+                <select name="NombreModelo" id="nombreModelo " class=""> 
+                    <option value="">Selecciona un Modelo</option>
+                    <?php foreach ($dataSelect as $k => $v) : ?>
+                        <?php foreach ($v as $ke => $va) : ?>
+                            <option value="<?= $va ?> "><?= $va?> </option>
+                            <?php endforeach ?>
+                    <?php endforeach ?>
+                    </select>
+                <label for=""> <?php  $dataSelect  ?></label>
             </div>
             <div class="containerInputs">
                 <label for="dolar">Valor del dólar:</label>

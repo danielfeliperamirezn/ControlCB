@@ -62,6 +62,14 @@ button {
     box-shadow: 0 18px 30px #e2e2e2;
     margin: 0 1em;
     width: auto;
+    .containerGlobalForm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .containerDataEmpresarial {
+            margin: 0 1em;
+        }
+    }
 }
  .margin_body {
     margin-left: 17%;

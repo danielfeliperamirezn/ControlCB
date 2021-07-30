@@ -10,11 +10,18 @@
     $fechaderegistro = $data["fechadeingreso"];
     $nacionalidad = $data["nacionalidad"];
     $cumpeanos = $data["cumpleanos"];
+    $nombreArtistico = $data["nombreArtistico"];
+    $tipoDeTrabajo =$data["tipoDeTrabajo"];
+    $banco = $data["banco"];
+    $tipoDeCuenta = $data["tipoDeCuenta"];
+    $numeroDeCuenta = $data["numeroDeCuenta"];
 
     if(!empty($nombre)) { 
-        $sql = "INSERT INTO modelos (nombre, cedula, celular, ganancia, ingreso, nacionalidad, cumpleanos) VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO modelos2 (nombre, cedula, celular, porcentaje, ingreso, nacionalidad, cumpleanos, nombreArtistico, tipoDeTrabajo, banco, tipoDeCuenta, numeroDeCuenta) 
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stamen = $conn->prepare($sql);
-        $stamen->bind_param('sssssss', $nombre, $cedula, $celular, $porcentajeGanancias, $fechaderegistro, $nacionalidad, $cumpeanos);
+        $stamen->bind_param('ssssssssssss', $nombre, $cedula, $celular, $porcentajeGanancias, $fechaderegistro, $nacionalidad, $cumpeanos,
+        $nombreArtistico, $tipoDeTrabajo, $banco, $tipoDeCuenta, $numeroDeCuenta );
 
         if($stamen->execute()) {
             $conn->affected_rows;
@@ -26,7 +33,6 @@
     } else {
         $cuerpoMensaje = "No se pudo Registrar el modelo";
     }
-
 ?>
 
 
@@ -39,8 +45,6 @@
     <title>Validando registro...</title>
 </head>
 <body> 
-
-    print_r($cuerpoMensaje);
 
 </body>
 </html>
