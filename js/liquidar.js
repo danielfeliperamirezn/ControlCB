@@ -2,9 +2,13 @@ let liquidar = {
 
     start:() => {
         document.addEventListener("DOMContentLoaded", function(event){
+            let datos = document.dataLiquidacion;
             liquidar.validationPage();
             liquidar.porcentaje();
-            liquidar.captureData();
+            datos.addEventListener("submit", (event) => {
+                event.preventDefault();
+                liquidar.captureData(datos);
+            })
         })
     },
 
@@ -150,19 +154,24 @@ let liquidar = {
         })
     },
 
-    captureData : () => {
-        const urlDatos = "../model/datosLiquidacion.php";
-        let datos = document.dataLiquidacion;
-        datos.addEventListener("submit", (event) => {
-            const formData = new FormData(datos);
-            fetch(urlDatos, {
-                method : 'POST',
-                body : formData
-            });
-            window.location.href = urlDatos;
-        })
+    datosLocalStorate: () => {
+
     },
 
+    constructorLiquidation: (formData) => {
+
+        let nombreModel =  formData.get("NombreModelo");
+        let dolar = formData.get("dolar");
+        if(formData.get("chaturbate")) {
+            let chaturbate = formData.get("chaturbate");
+        }
+
+    },
+
+    captureData : (datos) => {
+        const formData = new FormData(datos);
+        liquidar.constructorLiquidation(formData);
+    }
 }
 
 liquidar.start();

@@ -37,7 +37,7 @@
                 <label for=""> <?php  $dataSelect  ?></label>
             </div>
             <div class="containerInputs">
-                <label for="dolar">Valor del dólar:</label>
+                <label for="dolar">Dólar Hoy:</label>
                 <input type="number" name="dolar" id="dolar">
             </div>
             <div class="containerInputs labelPage">

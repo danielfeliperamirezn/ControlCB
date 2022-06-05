@@ -39,6 +39,8 @@ button {
   box-shadow: 0 18px 30px #e2e2e2;
   margin: 0 1em;
   width: auto; }
+  .bgBurbble .containerButtonModelos {
+    margin-top: 2em; }
   .bgBurbble .containerGlobalForm {
     display: flex;
     align-items: center;
@@ -207,6 +209,15 @@ footer {
   padding: 0 0em 2em;
   display: flex;
   align-items: initial; }
+  .containerDIVs form .containerFormNormal .containerPage .containerInputsPage {
+    display: flex; }
+    .containerDIVs form .containerFormNormal .containerPage .containerInputsPage label {
+      text-transform: capitalize;
+      text-align: center;
+      margin: 0 .4em;
+      box-shadow: 0 0 15px #eaeaea;
+      padding: 10px;
+      border-radius: 15px; }
   .containerDIVs form .containerInputs {
     padding: 1em 0;
     display: flex;

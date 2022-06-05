@@ -62,6 +62,9 @@ button {
     box-shadow: 0 18px 30px #e2e2e2;
     margin: 0 1em;
     width: auto;
+    .containerButtonModelos {
+        margin-top: 2em;
+    }
     .containerGlobalForm {
         display: flex;
         align-items: center;
@@ -244,6 +247,21 @@ footer {
     display: flex;
     align-items: initial;
     form {
+        .containerFormNormal {
+            .containerPage {
+                .containerInputsPage {
+                    display: flex;
+                    label {
+                        text-transform: capitalize;
+                        text-align: center;
+                        margin: 0 .4em;
+                        box-shadow: 0 0 15px #eaeaea;
+                        padding: 10px;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
         .containerInputs {
             padding: 1em 0;
             display: flex;
